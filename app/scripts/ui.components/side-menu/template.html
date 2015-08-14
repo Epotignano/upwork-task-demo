@@ -1,0 +1,47 @@
+<nav role="navigation" id="sidebar-wrapper" ng-class="{'open' : main.toggle}">
+  <ul class="menu">
+    <perfect-scrollbar class="scroller" wheel-propagation="true" wheel-speed="10" min-scrollbar-length="20">
+      <div  id="accordion">
+        <li class="sidebar-main">
+          <!--<a ng-click="main.toggleSidebar()">-->
+          <a>
+            <span class="logo"></span>
+          </a>
+        </li>
+
+        <li class="tienda">
+          <a class="foto"></a>
+          <div><div class="white-arrow"></div><a href="">Karen piezas unicas</a></div>
+        </li>
+
+        <li ui-sref-active="active">
+          <a ><span><div class="img-link"><i class="icon home"></i></div>Home</span></a>
+        </li>
+        <li ui-sref-active="active">
+          <a ><span><div class="img-link"><i class="icon articulos"></i></div>Articulos</span></a>
+        </li>
+        <li ui-sref-active="active" class="active">
+          <a ><span><div class="img-link"><i class="icon ordenes"></i></div>Ordenes</span></a>
+        </li>
+        <li ui-sref-active="active">
+          <a ><span><div class="img-link"><i class="icon categorias"></i></div>Categorias</span></a>
+        </li>
+        <li ui-sref-active="active">
+          <a ><span><div class="img-link"><i class="icon pagos"></i></div>Pagos</span></a>
+        </li>
+        <li ui-sref-active="active">
+          <a ><span><div class="img-link"><i class="icon mensajes"></i></div>Mensajes</span></a>
+        </li>
+        <li ui-sref-active="active">
+          <a ><span><div class="img-link"><i class="icon reportes"></i></div>Reportes</span></a>
+        </li>
+        <li ui-sref-active="active">
+          <a ><span><div class="img-link"><i class="icon ajustes"></i></div>Ajustes</span></a>
+        </li>
+
+      </div><!-- /#accordion -->
+
+    </perfect-scrollbar>
+
+  </ul>
+</nav>

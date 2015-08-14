@@ -1,0 +1,61 @@
+<div class="row text-center">
+  <h1> {{ ctrl.title }} </h1>
+  <small class="hidden-sm hidden-xs">{{ctrl.subTitle}}</small>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    Mostrando {{ctrl.orders.length}} ordenes
+  </div>
+  <div class="col-md-3">
+
+  </div>
+  <div class="col-md-6">
+
+  </div>
+</div>
+<div class="row">
+  <table-filter terms="ctrl.filter"></table-filter>
+</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Status</th>
+    <th>Orden</th>
+    <th>Unidades</th>
+    <th>Precio</th>
+    <th>Fecha</th>
+    <th>Detalle</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="order in (filteredOrders = (ctrl.orders| filter: ctrl.filter ) )">
+    <td>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox">
+        </label>
+      </div>
+    </td>
+    <td>
+      <order-status status="order.status"></order-status>
+    </td>
+    <td>
+      {{order.id}}
+    </td>
+    <td>
+      {{order.units}}
+    </td>
+    <td>
+      {{order.total_price}}
+    </td>
+    <td>
+      {{order.created | date:'dd/mm/yyyy'}}
+    </td>
+    <td>
+      <a href="">Ver</a>
+    </td>
+  </tr>
+  </tbody>
+</table>

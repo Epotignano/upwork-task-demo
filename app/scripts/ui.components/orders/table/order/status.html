@@ -1,0 +1,14 @@
+<p ng-class="{
+'col-md-12' : !ctrl.noStyle,
+'text-danger' : (ctrl.status == ctrl.possiblesStatus.cancelled && !ctrl.noStyle),
+'text-warning' : (ctrl.status == ctrl.possiblesStatus.waiting && !ctrl.noStyle),
+'text-success' : (ctrl.status == ctrl.possiblesStatus.paid && !ctrl.noStyle),
+'text-primary' : (ctrl.status == ctrl.possiblesStatus.no_founds && !ctrl.noStyle)
+}">
+
+  <span ng-show="(ctrl.status == ctrl.possiblesStatus.cancelled)">Cancelado</span>
+  <span ng-show="(ctrl.status == ctrl.possiblesStatus.waiting)">Esperando</span>
+  <span ng-show="(ctrl.status == ctrl.possiblesStatus.paid)">Pago</span>
+  <span ng-show="(ctrl.status == ctrl.possiblesStatus.no_founds)">Sin fondos</span>
+
+</p>

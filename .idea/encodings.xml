@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/auth/service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/ecommerce/controllers/ecommerceListController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/ecommerce/controllers/itemDetailController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/ecommerce/module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/ecommerce/views/ecommerce.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/main/module.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/main/views/main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/directive.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/filter/directive.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/filter/template.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/order/directive.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/order/status.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/order/template.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/template.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/side-menu/directive.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/side-menu/template.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/_sideMenu.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.scss" charset="UTF-8" />
+  </component>
+</project>
