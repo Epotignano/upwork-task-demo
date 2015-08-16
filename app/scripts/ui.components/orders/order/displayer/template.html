@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2>Órden N&deg;{{ displayer.element.id}}</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-md-1">Estado:</div>
+    <div class="col-md-11">
+      <order-status status="displayer.element.status" no-style="true"></order-status>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      Creado  {{ displayer.element.created | momentDate}}
+    </div>
+
+  </div>
+</div>

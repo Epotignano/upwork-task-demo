@@ -43,6 +43,7 @@ module.exports = function(config) {
       'bower_components/nya-bootstrap-select/dist/js/nya-bs-select.js',
       'bower_components/perfect-scrollbar/src/perfect-scrollbar.js',
       'bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js',
+      'bower_components/moment/moment.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

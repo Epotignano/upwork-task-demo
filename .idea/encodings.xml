@@ -8,14 +8,18 @@
     <file url="file://$PROJECT_DIR$/app/scripts/modules/ecommerce/controllers/itemDetailController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/modules/ecommerce/module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/modules/ecommerce/views/ecommerce.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/ecommerce/views/itemDetail.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/modules/main/module.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/modules/main/views/main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/modules/utils/dates.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/order/displayer/directive.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/order/displayer/template.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/order/status/directive.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/order/status/status.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/order/status/template.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/directive.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/filter/directive.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/filter/template.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/order/directive.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/order/status.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/order/template.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/ui.components/orders/table/template.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/ui.components/side-menu/directive.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/ui.components/side-menu/template.html" charset="UTF-8" />

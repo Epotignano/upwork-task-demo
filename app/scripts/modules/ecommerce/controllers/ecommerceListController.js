@@ -1,7 +1,8 @@
 'use strict';
 
-var EcommerceListCtrl = function(ecommerceService, $state, itemsList) {
+var EcommerceListCtrl = function(ecommerceService, $state, itemsList, authHandler) {
     var ecommerce = this;
+
 
   ecommerce.orders = { "data" : { "list" : [ { "created" : "1434546999",
     "id" : "29994",

@@ -2,38 +2,25 @@
  * Created by mmasuyama on 8/14/2015.
  */
 
-var authHandler = function() {
+var authHandler = function($resource, baseUrl) {
 
   return {
     auth: $resource(baseUrl + '/user/auth', {},
       {
         login: {
-          'method' : 'POST',
-          'headers' : {'Content-Type': 'application/x­www­form­urlencoded'}
+          'method' : 'POST'
         }
 
       }
-    ),
-    session: {
-      setToken: function() {
-
-      },
-
-      getToken : function() {
-
-      }
-    }
+    )
   }
-
-
-
 
 };
 
 
 angular.module('kichink.auth',['angular-jwt', 'ngCookies'])
-  .factory('authHandler', authHandler)
-  .factory('AuthInterceptor', function AuthInterceptor(authHandler) {
+  .factory('authHandler', authHandler);
+  /*.factory('AuthInterceptor', function AuthInterceptor(authHandler) {
     var addToken = function(configuration) {
       var token = authHandler.getToken();
       if (token) {
@@ -51,6 +38,6 @@ angular.module('kichink.auth',['angular-jwt', 'ngCookies'])
       addToken: addToken,
       isAuthorized: isAuthorized
     };
-  });
+  });*/
 
 
