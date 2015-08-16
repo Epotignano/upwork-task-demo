@@ -15,5 +15,22 @@
       Creado  {{ displayer.element.created | momentDate}}
     </div>
 
+
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12">
+              Estado {{ displayer.element.status }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <pick-up-actions order="displayer.element"></pick-up-actions>
+    </div>
+
+
+
   </div>
 </div>
