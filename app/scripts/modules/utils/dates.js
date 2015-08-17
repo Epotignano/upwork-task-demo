@@ -25,7 +25,7 @@ angular.module('kichink.utils.dates', [])
 
     return  function(input, toFormat) {
 
-      return moment.unix(input).format( toFormat || "dddd DD MMMM ,YYYY");
+      return moment.unix(input).format( toFormat || "MMMM DD  ,YYYY");
     }
 
   });

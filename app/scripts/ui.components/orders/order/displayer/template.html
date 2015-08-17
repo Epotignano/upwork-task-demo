@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <h2>Órden N&deg;{{ displayer.element.id}}</h2>
+    <h2 class="text-left">Órden N&deg;{{ displayer.element.id}}</h2>
   </div>
 
   <div class="row">
@@ -28,6 +28,8 @@
       </div>
 
       <pick-up-actions order="displayer.element"></pick-up-actions>
+      <order-panel item="item" ng-repeat="item in displayer.element.items"></order-panel>
+
     </div>
 
 
