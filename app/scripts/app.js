@@ -37,12 +37,3 @@ angular
     'paid': 'payment_done',
     'no_founds': 'sin_fondos'
   });
-
-  config(function ($httpProvider, jwtInterceptorProvider) {
-    moment().lang('es');
-    /*$httpProvider.defaults.useXDomain = true;
-    $httpProvider.defaults.withCredentials = true;
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
-    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';*/
-
-  });

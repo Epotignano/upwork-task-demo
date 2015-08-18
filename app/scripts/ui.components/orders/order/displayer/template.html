@@ -12,27 +12,15 @@
 
   <div class="row">
     <div class="col-md-12">
-      Creado  {{ displayer.element.created | momentDate}}
+      <p>Creado  {{ displayer.element.created | momentDate}}</p>
     </div>
-
-
     <div class="col-md-12">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-12">
-              Estado {{ displayer.element.status }}
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <status-panel status="displayer.element.status"></status-panel>
       <pick-up-actions order="displayer.element"></pick-up-actions>
       <order-panel item="item" ng-repeat="item in displayer.element.items"></order-panel>
+      <buyer-panel buyer="displayer.element.consumer"></buyer-panel>
+      <summary-panel order="displayer.element"> </summary-panel>
 
     </div>
-
-
-
   </div>
 </div>

@@ -2,42 +2,72 @@
  * Created by mmasuyama on 8/14/2015.
  */
 
-var authHandler = function($resource, baseUrl) {
+var authHandler = function($resource, baseUrl, authTokenKey) {
 
-  return {
-    auth: $resource(baseUrl + '/user/auth', {},
+  var service = this;
+
+  service.
+    auth = $resource(baseUrl + '/user/auth', {},
       {
         login: {
+          transformRequest: function(obj) {
+            var str = [];
+            for(var p in obj)
+              str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+            return str.join("&");
+          },
+
+          'headers': {
+            'Content-Type' : 'application/x-www-form-urlencoded'
+          },
+
           'method' : 'POST'
         }
 
       }
-    )
-  }
+    );
 
-};
+    service.token = {
+
+      get: function() {
+        // authToken key is a constant defined in auth - module.js
+        return localStorage.getItem(authTokenKey);
+      },
+
+      set: function(tokenToSet) {
+        localStorage.setItem(authTokenKey, tokenToSet);
+      }
+
+    };
+
+    service.isAuthorized = function() {
+      //define how we will determine when a user is authorized.
+      return true;
+    }
+  };
 
 
-angular.module('kichink.auth',['angular-jwt', 'ngCookies'])
-  .factory('authHandler', authHandler);
-  /*.factory('AuthInterceptor', function AuthInterceptor(authHandler) {
+angular.module('kichink.auth')
+  .service('authHandler', authHandler)
+  .factory('AuthInterceptor', function AuthInterceptor(authTokenKey) {
     var addToken = function(configuration) {
-      var token = authHandler.getToken();
+
+      var token = localStorage.getItem(authTokenKey);
+
       if (token) {
         configuration.headers = configuration.headers || {};
-        configuration.headers.Autorization = 'Bearer ' + token;
+        configuration.headers["X-API-KEY"] = token;
       }
-      return config;
+      return configuration;
     };
 
     var isAuthorized =function() {
-      return AuthTokenService.isAuthorized();
+      return authHandler.isAuthorized();
     };
 
     return {
-      addToken: addToken,
-      isAuthorized: isAuthorized
+      request: addToken
     };
-  });*/
+  });
 
 
