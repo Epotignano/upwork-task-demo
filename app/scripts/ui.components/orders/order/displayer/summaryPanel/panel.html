@@ -1,7 +1,9 @@
 <div class="panel panel-default">
 
   <div class="panel-title">
-    <h1>RESÚMEN</h1>
+    <div class="col-md-12">
+      <h1 class="text-left">Resúmen</h1>
+    </div>
   </div>
   <div class="panel-body">
     <div class="col-md-4">
@@ -13,11 +15,17 @@
       <h4>
         ENVÍO
       </h4>
+      <p class="text-center">
+        {{ctrl.order.shipment_price}}
+      </p>
     </div>
     <div class="col-md-4">
       <h4>
         TOTAL
       </h4>
+      <p class="text-center">
+        {{ ctrl.order.total_price }}
+      </p>
     </div>
 
   </div>
